@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 6rem;
+    padding: .6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+.container-header-nav {
+    width: 20rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-header-nav a {
+    text-decoration: none;
+}
+
+.container-header-nav a:hover {
+    text-decoration: underline;
+}
+
+.header-nav-profile img {
+    border-radius: 50%;
+}
+
+.header-nav-menu img {
+    height: 1.8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.search {
+    border: .1rem solid rgb(218, 218, 218);
+    border-radius: 5rem;
+    display: flex;
+    margin: 2rem;
+} 
+
+
+.search-icon-google {
+    height: 2.1rem;
+    margin: 1rem;
+}
+
+
+.search-input {
+    height: 3.4rem;
+    width: 80vw;
+    max-width: 48.7rem;
+    border-color: transparent;
+    justify-items: center;
+}
+
+.google-microphone-icon {
+    height: 2.2rem;
+    margin: 1rem;
+}
+
+div.button {
+    padding-top: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+.button {
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.button > input {
+    margin-left: 1rem;
+    padding: 0.7rem 1.6rem 0.7rem 1.6rem;
+    color: rgb(48, 48, 48);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    background-color: #f7f7f7;
+}
+
+div.blank-space {
+    height: 22.6rem;
+
+}
+
+footer {
+    background-color: #eaeae1;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer-one {
+    height: 3%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-one a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #78786d;
+    padding: 1.5rem;
+}
+
+
+.footer-two {
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-grow: 2;
+}
+
+.footer-two a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #78786d;
+    padding: 1.5rem;
+}
+.footer-two-a {
+    display: flex;
+    max-width: 85.5rem;
+}
+
+.footer-two-b {
+    display: flex;
+    max-width: 85.5rem;
+}
+
+.line {
+    width: 100%;
+    height: .1rem;
+    background-color: #cacaca;
+}

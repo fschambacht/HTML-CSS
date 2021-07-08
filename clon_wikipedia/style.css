@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Hoefler Text';
+    src: url('./fonts/FontsFree-Net-Hoefler-Text.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    font-family: 'Hoefler Text';
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+section .principal-tittle-two {
+    font-size: 2.2rem;   
+}
+
+section .principal-tittle-three {
+    font-size: 3.2rem;
+}
+
+section .principal-tittle-first {
+    font-size: 3.2rem;
+}
+
+header .principal-subtittle {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+/* imagen central de wikipedia */
+main section {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png');
+    background-size: contain;
+    height: 18.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-self: center;
+    position: absolute;
+}
+
+main div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+div div {
+    display: flex;
+    align-items: center;
+}
+
+div a {
+    text-decoration-line: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+} 
+
+div .main-left-number {
+    color: #54595d;
+    font-size: 1.3rem;
+}
+
+div .main-left-name {
+    color: #36c;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+div .main-right-name {
+    color: #36c;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/* espacios en blanco  */
+div .main-blank {
+    color: transparent;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/* alineacion cajas borde imagen wikipedia lado izquierdo */
+div .main-left-two {
+    margin-right: 12rem;
+}
+
+div .main-left-three {
+    margin-right: 13rem;
+}
+
+div .main-left-four {
+    margin-right: 11rem;
+}
+/* alineacion cajas borde imagen wikipedia lado derecho */
+div .main-right-two {
+    margin-left: 12rem;
+}
+
+div .main-right-three {
+    margin-left: 13rem;
+}
+
+div .main-right-four {
+    margin-left: 11rem;
+}
+
+/* input search, select optionlanguage and icon search */
+
+section.section-input-search {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+section.section-input-search div.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45rem;
+    height: 5rem;
+    border: 0.1rem solid #a2a9b1;
+    border-radius: 0.5rem;
+}
+
+section input {
+    height: 4rem;
+    width: 33rem;
+    border-style: none;
+    padding: 0.5rem;
+}
+
+section select {
+    height: 100%;
+    width: 4rem;
+    margin-right: 1rem;
+    border-style: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #54595d;
+    
+}
+
+div.search button.button-search-icon {
+    background-image: url('https://www.seekpng.com/png/full/920-9209972_magnifying-glass-png-white-search-icon-white-png.png');
+    height: 100%;
+    width: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: center;
+    background-color: #3366cc ;
+    border-style: none;
+}
+
+/* button select option "leer wikipedia en tu idioma" */
+
+section div.baseline-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+div span.baseline-button-line{
+    background-color: #c8ccd1;
+    height: 0.1rem;
+    width: 46rem;
+}
+
+
+div div.container-baseline-button {
+    position: absolute;
+    width: 32rem;
+    height: 5rem;
+    justify-content: center;
+    background-color: white;
+}
+
+div button.baseline-button-language{
+    display: flex;
+    width: 28rem;
+    height: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.1rem solid #a2a9b1;
+    background-color: transparent;
+    border-radius: 0.25rem;
+
+}
+
+button i.icon-language {
+    background-image: url('./assets/Screenshot_20210601_114526.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+}
+
+button i.baseline-button-text {
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3366cc;
+    font-style: normal;
+    font-weight: bold;
+}
+
+button select.baseline-select {
+    width: 2rem;
+    height: 2rem;
+    color: #3366cc;
+}
+
+/* salto de pagina */
+
+div.line-separator {
+    display: flex;
+    justify-content: center;
+   
+}
+ 
+div.line-separator hr {
+    width: 98%;
+}
+
+/* footer description, icons and apps */
+
+section.section-footer-description-app {
+    width: 100%;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1.25fr 3fr;
+}
+
+/* section description and apps */
+div.section-footer-description {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+span.section-footer-description img {
+    height: 4.2rem;
+}
+
+span.section-footer-description p {
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #54595d;
+    padding-left: 1rem;
+}
+
+span.section-footer-description a {
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3366cc;
+    padding-left: 1rem;
+}
+
+
+
+span.section-footer-icons-app p.tittle {
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #54595d;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+span.section-footer-icons-app p {
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #54595d;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+span.section-footer-icons-app img {
+    height: 4.2rem;
+}
+
+div.icons-apps img {
+    height: 3.8rem;
+    padding-left: 0.5rem;
+}
+
+div.container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+div.section-footer-icons-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    width: 100%;
+    padding: 3rem 6rem 3rem 3rem;
+}
+
+div.section-footer-icons-principal a img{
+    width: 4.5rem;
+    align-self: center;
+}
+
+div.section-footer-icons-principal a {
+    width: 22rem;
+    height: 8.5rem;
+    display: flex;
+}
+
+a span{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 1rem;
+} 
+
+span p.tittle-icons {
+    color: #3366cc;
+}
+
+span p {
+    color: #54595d;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    height: 5rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #54595d;
+    align-items: center;
+}
+
+p a {
+    color: #3366cc;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 17rem;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul li a {
+    color: #3366cc;
+    text-decoration-line: none;
+}
